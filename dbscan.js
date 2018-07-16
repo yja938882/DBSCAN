@@ -51,6 +51,10 @@
         return ret;
     }
 
+    /**
+     * @param {Function} distfunc
+     * @param {Function} cllback
+     */
     DBSCAN.prototype.clustering = function(distfunc, callback) {
         for(var i = 0, len = data.length; i < len; i++){
             if(data[i].cluster != -2 ) continue;
